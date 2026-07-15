@@ -1,0 +1,237 @@
+{
+  "users": [
+    {
+      "id": "usr-admin",
+      "email": "admin@society.com",
+      "password": "admin123",
+      "role": "Admin",
+      "name": "System Administrator",
+      "phone": "+1555000111",
+      "verified": true,
+      "isApproved": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "details": {}
+    },
+    {
+      "id": "usr-resident",
+      "email": "resident@society.com",
+      "password": "resident123",
+      "role": "Resident",
+      "name": "Sarah Connor",
+      "phone": "+15559872222",
+      "verified": true,
+      "isApproved": true,
+      "createdAt": "2026-01-12T09:10:00.000Z",
+      "details": {
+        "societyId": "soc-1",
+        "blockId": "blk-1",
+        "flatId": "flat-3",
+        "flatNo": "201-A"
+      }
+    },
+    {
+      "id": "usr-guardian",
+      "email": "guardian@society.com",
+      "password": "guardian123",
+      "role": "Guardian",
+      "name": "John Connor",
+      "phone": "+15559873344",
+      "verified": true,
+      "isApproved": true,
+      "createdAt": "2026-01-12T10:00:00.000Z",
+      "details": {
+        "residentId": "usr-resident",
+        "residentName": "Sarah Connor",
+        "relationship": "Son",
+        "emergencyContact": "+15559872222"
+      }
+    },
+    {
+      "id": "usr-volunteer",
+      "email": "volunteer@society.com",
+      "password": "volunteer123",
+      "role": "Volunteer",
+      "name": "Marcus Wright",
+      "phone": "+15553334444",
+      "verified": true,
+      "isApproved": true,
+      "createdAt": "2026-01-15T14:30:00.000Z",
+      "details": {
+        "skills": [
+          "First Aid & CPR",
+          "Disaster Response",
+          "Senior Care Support"
+        ],
+        "availability": "Evening"
+      }
+    },
+    {
+      "id": "usr-security",
+      "email": "security@society.com",
+      "password": "security123",
+      "role": "Security",
+      "name": "Officer Rogers",
+      "phone": "+15555556666",
+      "verified": true,
+      "isApproved": true,
+      "createdAt": "2026-01-11T07:00:00.000Z",
+      "details": {
+        "gateNumber": "Gate 1 (Main Entrance)",
+        "shift": "Day",
+        "assignedTower": "Tower A"
+      }
+    },
+    {
+      "id": "usr-1784054045029",
+      "email": "aasim@gmail.com",
+      "password": "aasim@2006",
+      "role": "Resident",
+      "name": "aasim",
+      "phone": "7702009633",
+      "verified": false,
+      "otp": "987875",
+      "isApproved": true,
+      "createdAt": "2026-07-14T18:34:05.029Z",
+      "details": {
+        "societyId": "soc-1",
+        "blockId": "blk-2",
+        "flatNo": "300",
+        "approvalStatus": "Approved"
+      }
+    }
+  ],
+  "societies": [
+    {
+      "id": "soc-1",
+      "name": "Emerald Heights",
+      "address": "123 Green Valley Road, Sector 4",
+      "description": "A premium gated community featuring green parks, robust smart-gate security, and active support clubs.",
+      "createdAt": "2026-01-10T10:00:00.000Z"
+    },
+    {
+      "id": "soc-2",
+      "name": "Serene Oasis",
+      "address": "456 Desert Palm Blvd, Sector 12",
+      "description": "A peaceful residential enclave renowned for its active volunteer network and safety protocols.",
+      "createdAt": "2026-02-15T11:00:00.000Z"
+    },
+    {
+      "id": "soc-3",
+      "name": "Golden Crest Towers",
+      "address": "789 Hilltop Avenue, Heights Block",
+      "description": "High-density residential towers offering dynamic visitor logging and direct emergency services.",
+      "createdAt": "2026-03-01T09:30:00.000Z"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "blk-1",
+      "societyId": "soc-1",
+      "name": "Tower A",
+      "description": "Located near Main Gate 1, high occupancy block with senior care access",
+      "createdAt": "2026-01-11T10:00:00.000Z"
+    },
+    {
+      "id": "blk-2",
+      "societyId": "soc-1",
+      "name": "Tower B",
+      "description": "Overlooking central park, includes emergency assembly zone",
+      "createdAt": "2026-01-11T11:30:00.000Z"
+    },
+    {
+      "id": "blk-3",
+      "societyId": "soc-2",
+      "name": "Phase 1 Block C",
+      "description": "Near the community hall, premium single-floor configurations",
+      "createdAt": "2026-02-16T12:00:00.000Z"
+    }
+  ],
+  "flats": [
+    {
+      "id": "flat-1",
+      "blockId": "blk-1",
+      "number": "101-A",
+      "occupancyStatus": "Occupied",
+      "ownerName": "Alexander Wright",
+      "phone": "+15559871111",
+      "createdAt": "2026-01-12T08:00:00.000Z"
+    },
+    {
+      "id": "flat-2",
+      "blockId": "blk-1",
+      "number": "102-A",
+      "occupancyStatus": "Vacant",
+      "ownerName": "",
+      "phone": "",
+      "createdAt": "2026-01-12T08:30:00.000Z"
+    },
+    {
+      "id": "flat-3",
+      "blockId": "blk-1",
+      "number": "201-A",
+      "occupancyStatus": "Occupied",
+      "ownerName": "Sarah Connor",
+      "phone": "+15559872222",
+      "createdAt": "2026-01-12T09:00:00.000Z"
+    },
+    {
+      "id": "flat-4",
+      "blockId": "blk-2",
+      "number": "101-B",
+      "occupancyStatus": "Occupied",
+      "ownerName": "David Miller",
+      "phone": "+15559873333",
+      "createdAt": "2026-01-13T08:00:00.000Z"
+    },
+    {
+      "id": "flat-5",
+      "blockId": "blk-2",
+      "number": "202-B",
+      "occupancyStatus": "Maintenance",
+      "ownerName": "",
+      "phone": "",
+      "createdAt": "2026-01-13T09:00:00.000Z"
+    }
+  ],
+  "notices": [
+    {
+      "id": "notice-2",
+      "title": "Community Fire Safety Drill",
+      "content": "A joint fire response drill with local fire rescue teams will be conducted in the Emerald Heights assembly grounds on Friday at 04:00 PM. All residents and staff are strongly encouraged to join.",
+      "category": "Security",
+      "date": "2026-07-12T15:00:00.000Z",
+      "postedBy": "System Administrator"
+    }
+  ],
+  "visitors": [
+    {
+      "id": "vis-1",
+      "residentId": "usr-resident",
+      "residentName": "Sarah Connor",
+      "flatNo": "201-A",
+      "visitorName": "Thomas Anderson",
+      "phone": "+15554449988",
+      "vehicleNo": "NEO-101",
+      "purpose": "Delivery",
+      "status": "Checked-In",
+      "checkInTime": "2026-07-14T08:30:00.000Z",
+      "qrCodeValue": "S360-VIS-839210",
+      "createdAt": "2026-07-14T08:00:00.000Z"
+    }
+  ],
+  "sosAlerts": [],
+  "tickets": [
+    {
+      "id": "tkt-1",
+      "residentId": "usr-resident",
+      "residentName": "Sarah Connor",
+      "flatNo": "201-A",
+      "title": "Main gate intercom malfunction",
+      "description": "When guards call flat 201-A from the intercom system, it disconnects immediately and makes a screeching sound. Needs repair.",
+      "category": "Electrical",
+      "priority": "Medium",
+      "status": "Resolved",
+      "createdAt": "2026-07-13T11:00:00.000Z"
+    }
+  ]
+}

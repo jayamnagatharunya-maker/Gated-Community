@@ -1,0 +1,6 @@
+{
+  "name": "Resident, Society & Emergency Contact Management System",
+  "description": "A comprehensive system featuring secure authentication, multi-role registration, society configuration, and an interactive Web Admin and simulated Mobile App workspace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
